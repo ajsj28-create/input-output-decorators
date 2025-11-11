@@ -1,0 +1,82 @@
+<div class="mx-3 mb-3 py-2 px-4 border border-dark rounded-lg color-light">
+    <h2 class="m-0 p-2">Component C - Property binding with Non-primitive data</h2>
+    <p class="alert alert-primary">
+        The meeting titled <strong>{{childMeeting.title}}</strong> will take place on <strong>{{childMeeting.schedule.date}}</strong> at <strong>{{childMeeting.schedule.time}}</strong> in <strong>{{childMeeting.schedule.location.room}}, {{childMeeting.schedule.location.city}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childStudent2.name}}</strong> scored <strong>{{childStudent2.grades.subjects[0].marks}}</strong> in <strong>{{childStudent2.grades.subjects[0].name}}</strong> and <strong>{{childStudent2.grades.subjects[1].marks}}</strong> in <strong>{{childStudent2.grades.subjects[1].name}}</strong>, making her overall grade <strong>{{childStudent2.grades.overall}}</strong>%.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childEmployee3.info.name}}</strong> is a <strong>{{childEmployee3.info.position}}</strong>, who works in <strong>{{childEmployee3.info.department.name}}</strong> department which is at floor <strong>{{childEmployee3.info.department.floor}}</strong>. 
+    </p>
+    <p class="alert alert-primary">
+        A flight booking has been confirmed for <strong>{{childBooking.passenger.name}}</strong>, aged <strong>{{childBooking.passenger.age}}</strong>, who will be travelling from <strong>{{childBooking.trip.from}}</strong> to <strong>{{childBooking.trip.to}}</strong> on <strong>{{childBooking.trip.date}}</strong>. She is flying <strong>{{childBooking.trip.seat.type}}</strong> class and her seat number is <strong>{{childBooking.trip.seat.number}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        The <strong>{{childCourse5.title}}</strong> course spans over <strong>{{childCourse5.duration}}</strong> and is conducted by <strong>{{childCourse5.instructor.name}}</strong>. For any assistance, he can be contacted via <strong>{{childCourse5.instructor.contact.email}}</strong> or on <strong>{{childCourse5.instructor.contact.phone}}</strong>.
+    </p>
+
+    <p class="alert alert-primary">
+        <strong>{{childOrder.customer.name}}</strong> purchased a <strong>{{childOrder.items[0].name}}</strong> and <strong>{{childOrder.items[1].name}}</strong> for a total of <strong>₹{{childOrder.total}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childPlaylist.createdBy}}</strong>’s <strong>{{childPlaylist.name}}</strong> playlist includes <strong>{{childPlaylist.songs[0].title}}</strong> by <strong>{{childPlaylist.songs[0].artist}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childEnrollment.student.name}}</strong>, a second-year <strong>{{childEnrollment.student.program.name}}</strong> student, is enrolled in the <strong>{{childEnrollment.semester}}</strong> semester. Her subjects include <strong>{{childEnrollment.subjects[0].title}}</strong> (<strong>{{childEnrollment.subjects[0].credits}}</strong> credits) and <strong>{{childEnrollment.subjects[1].title}}</strong> (<strong>{{childEnrollment.subjects[1].credits}}</strong> credits).
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childPatientRecord.name}}</strong> visited <strong>{{childPatientRecord.visit.doctor.name}}</strong> from <strong>{{childPatientRecord.visit.doctor.department}}</strong> on <strong>{{childPatientRecord.visit.date}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childTransaction.account.holder}} {{childTransaction.details.type}}</strong>ed <strong>₹{{childTransaction.details.amount}}</strong> to his account at the <strong>{{childTransaction.details.branch.name}}</strong> branch (IFSC: <strong>{{childTransaction.details.branch.ifsc}}</strong>) on <strong>{{childTransaction.details.date}}</strong>.
+    </p>
+
+    <p class="alert alert-primary">
+        The <strong>{{childProduct.manufacturer.brand}} {{childProduct.name}}</strong> costs <strong>₹{{childProduct.price}}</strong> and has a <strong>{{childProduct.reviews.rating}}</strong>-star rating from <strong>{{childProduct.reviews.total}}</strong> reviews.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childMovie.info.title}}</strong>, directed by <strong>{{childMovie.info.director.name}}</strong>, was released in <strong>{{childMovie.info.release.year}}</strong> in the <strong>{{childMovie.info.release.language}}</strong> language.
+    </p>
+    <p class="alert alert-primary">
+        Shipment with tracking ID <strong>{{childShipment.trackingId}}</strong> is currently <strong>{{childShipment.status.current}}</strong> and heading towards <strong>{{childShipment.destination.city}}, {{childShipment.destination.country}}</strong>. The last update was recorded on <strong>{{childShipment.status.lastUpdated}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childAdmission.student.name}}</strong> has been admitted to <strong>{{childAdmission.college.name}}</strong> for <strong>{{childAdmission.college.course}}</strong> from <strong>{{childAdmission.session.start}}</strong> to <strong>{{childAdmission.session.end}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childConference.name}} {{childConference.year}}</strong> in <strong>{{childConference.location.city}}</strong> will feature talks on <strong>{{childConference.speakers[0].topic}}</strong> and <strong>{{childConference.speakers[1].topic}}</strong>.
+    </p>
+
+    <p class="alert alert-primary">
+        On <strong>{{childInvoice.date}}, {{childInvoice.customer.name}}</strong> from <strong>{{childInvoice.customer.city}}</strong> received an invoice numbered <strong>{{childInvoice.invoiceNo}}</strong> for her purchase of a <strong>{{childInvoice.billing.items[0].name}}</strong> priced at <strong>{{childInvoice.billing.items[0].price}}</strong> and a <strong>{{childInvoice.billing.items[1].name}}</strong> priced at <strong>{{childInvoice.billing.items[1].price}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childOrderNow.customer.name}}</strong> from <strong>{{childOrderNow.customer.location}}</strong> placed an e-commerce order <strong>{{childOrderNow.orderId}}</strong> consisting of a <strong>{{childOrderNow.items[0].name}}</strong> and a <strong>{{childOrderNow.items[1].name}}</strong>, with a total cost of <strong>{{childOrderNow.totalAmount}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childTicket.passenger.name}}</strong> is traveling from <strong>{{childTicket.flight.route.from}}</strong> to <strong>{{childTicket.flight.route.to}}</strong> on flight <strong>{{childTicket.flight.number}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        On <strong>{{childTransactionBank.date}}, {{childTransactionBank.sender.name}}</strong> transferred <strong>{{childTransactionBank.amount}}</strong> from her account <strong>{{childTransactionBank.sender.account}}</strong> to <strong>{{childTransactionBank.receiver.name}}</strong> at account <strong>{{childTransactionBank.receiver.account}}</strong> with transaction ID <strong>{{childTransactionBank.txnId}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        The <strong>{{childProductSell.title}} {{childProductSell.id}}</strong> features an <strong>{{childProductSell.specs.processor}}</strong> processor, <strong>{{childProductSell.specs.storage}}</strong> storage, and comes in an elegant <strong>{{childProductSell.specs.color}}</strong> color. Priced at <strong>₹{{childProductSell.price}}</strong>.
+    </p>
+
+    <p class="alert alert-primary">
+        <strong>{{childGuestBook.guest.name}}</strong> booked a <strong>{{childGuestBook.room.type}}</strong> room (<strong>{{childGuestBook.room.number}}</strong>) at the luxurious <strong>{{childGuestBook.hotel.name}}</strong> Hotel in <strong>{{childGuestBook.hotel.city}}</strong> for <strong>{{childGuestBook.guest.nights}}</strong> nights. Her check-in date is <strong>{{childGuestBook.checkIn}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childCart.user.name}}</strong> has two items in her online shopping cart: <strong>{{childCart.items[0].quantity}} {{childCart.items[0].name}}</strong> and a pair of <strong>{{childCart.items[1].name}}</strong> of amount <strong>₹{{childCart.total}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childRestaurantOrder.customer.name}}</strong> at table <strong>{{childRestaurantOrder.customer.table}}</strong> ordered <strong>{{childRestaurantOrder.items[0].name}}</strong> and <strong>{{childRestaurantOrder.items[1].name}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        The <strong>{{childClassSchedule.subject}}</strong> class taught by <strong>{{childClassSchedule.teacher.name}}</strong> is scheduled in Room <strong>{{childClassSchedule.teacher.room}}</strong> from <strong>{{childClassSchedule.time.start}}</strong> to <strong>{{childClassSchedule.time.end}}</strong>.
+    </p>
+    <p class="alert alert-primary">
+        <strong>{{childEcommerceOrder.customer.name}}</strong> placed an online order <strong>{{childEcommerceOrder.orderId}}</strong> for an <strong>{{childEcommerceOrder.items[0].name}}</strong> and <strong>{{childEcommerceOrder.items[1].name}}</strong>, together priced at <strong>₹{{childEcommerceOrder.items[0].price + childEcommerceOrder.items[1].price}}</strong>. Her delivery address is <strong>{{childEcommerceOrder.customer.address.street}}, {{childEcommerceOrder.customer.address.city}}</strong> (PIN: <strong>{{childEcommerceOrder.customer.address.pin}}</strong>). The order was <strong>{{childEcommerceOrder.payment.status}}</strong> via <strong>{{childEcommerceOrder.payment.mode}}</strong> and the order is <strong>{{childEcommerceOrder.delivery.status}}</strong>, expected to arrive by <strong>{{childEcommerceOrder.delivery.expected}}</strong>.
+    </p>
+</div>
