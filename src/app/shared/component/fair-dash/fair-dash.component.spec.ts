@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompCComponent } from './comp-c.component';
+import { FairDashComponent } from './fair-dash.component';
 
-describe('CompCComponent', () => {
-  let component: CompCComponent;
-  let fixture: ComponentFixture<CompCComponent>;
+describe('FairDashComponent', () => {
+  let component: FairDashComponent;
+  let fixture: ComponentFixture<FairDashComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CompCComponent ]
+      declarations: [ FairDashComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CompCComponent);
+    fixture = TestBed.createComponent(FairDashComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

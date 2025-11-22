@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-body">
+        <form #productForm="ngForm">
+            <div class="form-group">
+                <label for="name">Product Name:</label>
+                <input
+                required
+                ngModel
+                name="name"
+                type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="description">Product Description:</label>
+                <textarea
+                required
+                ngModel
+                name="description"
+                rows="5" class="form-control" id="description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select
+                required
+                ngModel
+                name="category" class="form-control" id="category">
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Wearables">Wearables</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Gaming">Gaming</option>
+            </select>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary">Add Product</button>
+                <button typr="button" class="btn btn-primary">Update Product</button>
+            </div>
+        </form>
+    </div>
+</div>

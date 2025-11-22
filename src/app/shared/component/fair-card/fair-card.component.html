@@ -1,0 +1,9 @@
+<div
+(click)="getFair(cardObj.fairName)"
+class="p-3 mb-3 rounded-lg bg-teal">
+    <h3 class="mb-0">{{ cardObj.fairName | uppercase }}</h3>
+    <p class="m-0 px-2 py-2 rounded-sm bg-white text-dark">
+        <span class="d-block">Event Type: {{ cardObj.type }}</span>
+        <span>Date: {{ cardObj.startDate * 1000 | date }}</span>
+    </p>
+</div>

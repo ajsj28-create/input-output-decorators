@@ -1,0 +1,12 @@
+<div>
+    <figure class="fairImg">
+        <img [src]="detailsObj.bannerUrl" alt="fairImg">
+        <p class="m-0 p-3 caption text-white">
+            <span class="d-block">Event Type: {{ detailsObj.type }}</span>
+            <span>Time: {{ detailsObj.startDate * 1000 | date }}</span>
+        </p>
+    </figure>
+    <p
+    [innerHTML]="detailsObj.candidateDescription"
+    ></p>
+</div>

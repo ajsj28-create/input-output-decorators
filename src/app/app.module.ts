@@ -3,22 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CompAComponent } from './shared/component/comp-a/comp-a.component';
-import { CompBComponent } from './shared/component/comp-b/comp-b.component';
-import { CompCComponent } from './shared/component/comp-c/comp-c.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FairDashComponent } from './shared/component/fair-dash/fair-dash.component';
+import { FairCardComponent } from './shared/component/fair-card/fair-card.component';
+import { FairDetailsComponent } from './shared/component/fair-details/fair-details.component';
+import { ProductDashComponent } from './shared/component/product-dash/product-dash.component';
+import { ProductFormComponent } from './shared/component/product-form/product-form.component';
+import { ProductCardsComponent } from './shared/component/product-cards/product-cards.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompAComponent,
-    CompBComponent,
-    CompCComponent
+    FairDashComponent,
+    FairCardComponent,
+    FairDetailsComponent,
+    ProductDashComponent,
+    ProductFormComponent,
+    ProductCardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

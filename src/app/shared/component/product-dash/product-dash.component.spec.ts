@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompAComponent } from './comp-a.component';
+import { ProductDashComponent } from './product-dash.component';
 
-describe('CompAComponent', () => {
-  let component: CompAComponent;
-  let fixture: ComponentFixture<CompAComponent>;
+describe('ProductDashComponent', () => {
+  let component: ProductDashComponent;
+  let fixture: ComponentFixture<ProductDashComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CompAComponent ]
+      declarations: [ ProductDashComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CompAComponent);
+    fixture = TestBed.createComponent(ProductDashComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
